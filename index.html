@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feliz cumpleaños, mi princesita 💞</title>
+<meta name="theme-color" content="#0b2a6f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+<!-- Símbolo del lirio (se reutiliza en toda la página) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="petal" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#bcd6ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <symbol id="lily" viewBox="0 0 100 100">
+    <g stroke="#8fb8ff" stroke-width="1" fill="url(#petal)" stroke-linejoin="round">
+      <path d="M50 52 C34 36 38 12 50 3 C62 12 66 36 50 52Z"/>
+      <path d="M50 52 C34 36 38 12 50 3 C62 12 66 36 50 52Z" transform="rotate(60 50 50)"/>
+      <path d="M50 52 C34 36 38 12 50 3 C62 12 66 36 50 52Z" transform="rotate(120 50 50)"/>
+      <path d="M50 52 C34 36 38 12 50 3 C62 12 66 36 50 52Z" transform="rotate(180 50 50)"/>
+      <path d="M50 52 C34 36 38 12 50 3 C62 12 66 36 50 52Z" transform="rotate(240 50 50)"/>
+      <path d="M50 52 C34 36 38 12 50 3 C62 12 66 36 50 52Z" transform="rotate(300 50 50)"/>
+    </g>
+    <g stroke="#e0b14a" stroke-width="1.2" stroke-linecap="round">
+      <line x1="50" y1="50" x2="50" y2="30"/><line x1="50" y1="50" x2="66" y2="38"/><line x1="50" y1="50" x2="34" y2="38"/>
+    </g>
+    <g fill="#ffd36b">
+      <circle cx="50" cy="29" r="3"/><circle cx="67" cy="37" r="3"/><circle cx="33" cy="37" r="3"/>
+    </g>
+    <circle cx="50" cy="50" r="4" fill="#ffd36b"/>
+  </symbol>
+</svg>
+
+
+<!-- Entrada -->
+<div class="intro" id="intro">
+  <div>
+    <div class="teddy">🧸</div>
+    <h2>Tengo algo para ti</h2>
+    <p>Una sorpresa hecha con todo mi cariño 💞</p>
+    <button class="btn" id="abrir">Abrir mi regalo</button>
+  </div>
+</div>
+
+<!-- Hero -->
+<header class="hero" id="inicio">
+  <svg class="deco d1"><use href="#lily"/></svg>
+  <svg class="deco d2"><use href="#lily"/></svg>
+  <svg class="deco d3"><use href="#lily"/></svg>
+  <div class="hero-in">
+    <p class="eyebrow">Para mis ojitos dindos</p>
+    <h1>Feliz<br>cumpleaños<span class="name script" id="nombre">mi princesita</span></h1>
+    <span class="heart">💞</span>
+    <p class="sub">Hoy el mundo celebra a la persona más bonita que he conocido.</p>
+  </div>
+  <div class="scroll">DESLIZA ↓</div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 40 C240 90 480 0 720 30 C960 60 1200 90 1440 30 L1440 90 L0 90Z" fill="#eaf3ff"/></svg>
+</header>
+
+<!-- Carta -->
+<section class="wrap">
+  <div class="title reveal">
+    <h2>Una carta para ti</h2>
+    <div class="div"><svg class="lily"><use href="#lily"/></svg></div>
+  </div>
+  <article class="letter reveal">
+    <h3 id="cartaTitulo"></h3>
+    <div id="cartaTexto"></div>
+    <p class="sign script" id="firma"></p>
+  </article>
+</section>
+
+<!-- Razones -->
+<section class="wrap" style="padding-top:20px">
+  <div class="title reveal">
+    <h2>Por qué eres mi princesita</h2>
+    <div class="div"><svg class="lily"><use href="#lily"/></svg></div>
+    <p>Algunas de las mil razones por las que te quiero</p>
+  </div>
+  <div class="reasons" id="razones"></div>
+</section>
+
+<!-- Galería -->
+<section class="wrap">
+  <div class="title reveal">
+    <h2>Mi princesita en fotos</h2>
+    <div class="div"><svg class="lily"><use href="#lily"/></svg></div>
+    <p>Toca una foto para verla más grande</p>
+  </div>
+  <div class="gallery" id="galeria"></div>
+</section>
+
+<!-- Pastel -->
+<section class="cake-sec">
+  <div class="wrap">
+    <div class="title reveal">
+      <h2>Hora de las velitas</h2>
+      <div class="div"><svg class="lily"><use href="#lily"/></svg></div>
+      <p>Cierra tus ojitos, pide un deseo muy bonito y sopla</p>
+    </div>
+    <div class="reveal">
+      <div class="cake" id="cake">
+        <div class="candles" id="velas"></div>
+        <div class="tier t1"></div>
+        <div class="tier t2">💞</div>
+        <div class="plate"></div>
+      </div>
+      <button class="btn" id="soplar">Soplaa las velitas </button>
+      <p id="deseoTexto" class="script"></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Hecho con mucho amor, solo para ti 💞
+</footer>
+
+<!-- Lightbox -->
+<div class="lb" id="lb">
+  <button class="x" aria-label="Cerrar">×</button>
+  <img id="lbImg" alt="">
+  <p class="script" id="lbTxt"></p>
+</div>
+
+<button class="music" id="musica" title="Música" hidden>🎵</button>
+<audio id="audio" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
